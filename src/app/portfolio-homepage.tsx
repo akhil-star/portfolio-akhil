@@ -136,10 +136,10 @@ export default function Component() {
 
             <div className="relative z-10">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                Let's Collaborate
+                Let&#39;s Collaborate
               </h2>
               <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-                Ready to bring your ideas to life? Let's create something amazing together.
+                Ready to bring your ideas to life? Let&#39;s create something amazing together.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
