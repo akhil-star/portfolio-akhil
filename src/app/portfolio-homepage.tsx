@@ -81,7 +81,7 @@ export default function Component() {
       </section>
 
        {/* Behance Button Section */}
-      <section className="py-24 px-4 flex justify-center">
+      <section className="pb-30 px-4 flex justify-center">
         <Link
           href="https://www.behance.net/drakhilbiju"
           target="_blank"
