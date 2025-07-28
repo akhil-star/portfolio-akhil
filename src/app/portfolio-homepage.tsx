@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Linkedin, FileText, ArrowRight, ExternalLink } from "lucide-react"
+import { Mail, Linkedin, FileText, ArrowRight, ExternalLink, Dribbble } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -80,8 +80,52 @@ export default function Component() {
         </div>
       </section>
 
+       {/* Behance Button Section */}
+      <section className="py-24 px-4 flex justify-center">
+        <Link
+          href="https://www.behance.net/drakhilbiju"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group w-full max-w-2xl"
+        >
+          <div className="relative">
+            {/* Enhanced glow effect */}
+            <div className="absolute -inset-2 bg-gradient-to-r from-pink-500/40 via-purple-500/40 to-blue-500/40 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+
+            {/* Main button - much larger */}
+            <div className="relative bg-white/8 backdrop-blur-2xl border border-white/20 rounded-2xl px-12 py-8 transition-all duration-500 group-hover:bg-white/12 group-hover:border-white/30 group-hover:transform group-hover:scale-[1.02] group-hover:shadow-2xl group-hover:shadow-purple-500/25">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-6">
+                  <div className="p-4 bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300">
+                    <Dribbble className="h-8 w-8 text-white" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-white font-bold text-2xl mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-300">
+                      View on Behance
+                    </p>
+                    <p className="text-gray-400 text-lg group-hover:text-gray-300 transition-colors duration-300">
+                      Explore my complete design portfolio & case studies
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="hidden sm:flex flex-col text-right">
+                    <span className="text-gray-400 text-sm">Portfolio</span>
+                    <span className="text-white font-medium">Design Cases</span>
+                  </div>
+                  <ExternalLink className="h-6 w-6 text-gray-400 group-hover:text-white group-hover:transform group-hover:translate-x-1 transition-all duration-300" />
+                </div>
+              </div>
+
+              {/* Subtle bottom accent line */}
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+          </div>
+        </Link>
+      </section>
+      
       {/* Selected Works Section */}
-      <section id="projects" className="py-20 px-4 relative">
+      <section id="projects" className="py-15 px-4 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
